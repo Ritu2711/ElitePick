@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="proj.elitepick.MainActivity">
+
+
+    <ImageView
+        android:src="@drawable/main"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <ImageView
+        android:layout_margin="8dp"
+        android:layout_width="30dp"
+        android:src="@mipmap/ic_close"
+        android:layout_height="30dp" />
+    <RelativeLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="457dp">
+
+    <TextView
+android:fontFamily="sans-serif-smallcaps"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:id="@+id/name"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ELITEPICK"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:text="GET STARTED"
+        android:textColor="@android:color/white"
+        android:padding="15dp"
+        android:layout_marginTop="200dp"
+        android:id="@+id/btn_explore"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:background="#E53E00"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true" />
+        <LinearLayout
+            android:layout_below="@+id/btn_explore"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Already have an account? "
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:text="SIGN IN"
+                android:id="@+id/signin"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:textColor="#E53E00"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>

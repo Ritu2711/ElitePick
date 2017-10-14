@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<proj.elitepick.user.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b1aeae"
+    >
+<FrameLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:background="@android:color/transparent"
+        android:layout_width="40dp"
+        android:layout_gravity="end"
+        android:id="@+id/option"
+        android:src="@drawable/dots_white"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:id="@+id/imgwish"
+        android:src="@drawable/ph_wishbook"
+        android:layout_height="70dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/wishname"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom"/>
+</FrameLayout>
+
+</proj.elitepick.user.SquareRelativeLayout>

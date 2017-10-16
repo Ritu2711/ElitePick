@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FEFEFE"
+    android:layout_margin="10dp"
+    tools:context="proj.elitepick.LoginScreen">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:background="#3b5998"
+        android:textColor="#ffffff"
+        android:text="LOG IN WITH FACEBOOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_gravity="center"
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cardview_dark_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="OR"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_gravity="center"
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cardview_dark_background"/>
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Email"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <EditText
+        android:textColorHighlight="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:hint="Password"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+    android:text="SIGN UP"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:text="Already have an account? "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="SIGN IN"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

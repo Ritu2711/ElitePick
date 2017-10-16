@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#E53E00</color>
     <color name="colorPrimaryDark">#bc3300</color>
-    <color name="colorAccent">#96BCB7</color>
+    <color name="colorAccent">#E53E00</color>
 
     <color name="colorTextPrimary">#FFFFFF</color>
     <color name="colorSub">#b0afaf</color>
@@ -11,6 +11,7 @@
     <color name="navigation_sep_color">#f2f2f2</color>
     <color name="colorblue">#4c71f5</color>
     <color name="navigationBarColor">#29b6f6</color>
+    <color name="flat_pressed">#66999999</color>
 
     <color name="colorTextDisable">#66FFFFFF</color>
 </resources>

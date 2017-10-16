@@ -29,41 +29,12 @@
             android:id="@+id/tvVersionName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lollipop"
+            android:text=""
             android:layout_marginTop="10dp"
             android:textColor="@android:color/black"
             android:textSize="12sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
 
-            >
-            <TextView
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="NIKE"
-
-                android:textSize="12sp"
-                />
-
-
-
-            <TextView
-                android:layout_weight="2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="$ 87"
-                android:padding="2dp"
-                android:gravity="center"
-                android:textColor="@android:color/white"
-                android:textSize="12sp" />
-
-
-        </LinearLayout>
 
 
     </LinearLayout>

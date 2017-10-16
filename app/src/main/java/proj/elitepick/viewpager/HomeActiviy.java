@@ -4,6 +4,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import proj.elitepick.R;
 import proj.elitepick.fragments.HomeFragment;
@@ -34,6 +35,7 @@ public class HomeActiviy extends AppCompatActivity {
         //Initializing the tablayout
         tabLayout = (TabLayout) findViewById(R.id.tablayout);
         tabLayout.setupWithViewPager(viewPager);
+
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -53,6 +55,13 @@ public class HomeActiviy extends AppCompatActivity {
         });
 
         setupViewPager(viewPager);
+        int defaultValue = 0;
+        int page = getIntent().getIntExtra("One", defaultValue);
+
+        //viewPager.setCurrentItem(page);
+        selectPage(page);
+
+        Log.d("hjhkjh",""+page);
 
     }
     private void setupViewPager(ViewPager viewPager)
@@ -65,4 +74,10 @@ public class HomeActiviy extends AppCompatActivity {
         adapter.addFragment(productragment,"PRODUCTS");
         viewPager.setAdapter(adapter);
     }
+
+    void selectPage(int pageIndex){
+        tabLayout.setScrollPosition(pageIndex,0f,true);
+        viewPager.setCurrentItem(pageIndex);
+    }
+
 }

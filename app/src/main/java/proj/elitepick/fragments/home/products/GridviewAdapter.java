@@ -14,6 +14,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import proj.elitepick.R;
+import proj.elitepick.fragments.ProductDetail;
 
 public class GridviewAdapter extends BaseAdapter {
 
@@ -86,18 +87,19 @@ public class GridviewAdapter extends BaseAdapter {
         viewHolder.discription1.setText(bean.getDiscription1());
         viewHolder.date1.setText(bean.getDate1());
         final ViewHolder finalViewHolder = viewHolder;
-        viewHolder.ic_wishlist.setOnClickListener(new View.OnClickListener() {
+        viewHolder.image1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 /*ImageUrlUtils imageUrlUtils = new ImageUrlUtils();
                 imageUrlUtils.addWishlistImageUri(mValues[position]);*/
                 //add category
-                finalViewHolder.ic_wishlist.setImageResource(R.drawable.ic_favorite_black_18dp);
-                notifyDataSetChanged();
+                /*finalViewHolder.ic_wishlist.setImageResource(R.drawable.ic_favorite_black_18dp);
+                notifyDataSetChanged();*/
+                //Toast.makeText(context, "sfsf", Toast.LENGTH_SHORT).show();
 
-              /*  Intent intent=new Intent(context, DialogWish.class);
+                Intent intent=new Intent(context, ProductDetail.class);
                 context.startActivity(intent);;
-                Toast.makeText(context,"Item added to wishlist.",Toast.LENGTH_SHORT).show();*/
+               // Toast.makeText(context,"Item added to wishlist.",Toast.LENGTH_SHORT).show();
 
             }
         });

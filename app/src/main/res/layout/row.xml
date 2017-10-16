@@ -10,18 +10,18 @@
 
     <FrameLayout
         android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:orientation="vertical">
         <ImageView
             android:layout_width="match_parent"
             android:id="@+id/img1"
-            android:scaleType="centerCrop"
+            android:scaleType="centerInside"
             android:layout_height="match_parent" />
         <TextView
             android:background="#8888"
 android:layout_gravity="bottom"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="60dp"
             android:text="Text1"
             android:lines="2"
             android:textStyle="bold"

@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/tools"
+
     tools:context="proj.elitepick.user.WishbookActivity">
 
 
@@ -13,14 +15,51 @@
 
     </android.support.v7.widget.RecyclerView>
 
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_margin="10dp"
-        android:src="@drawable/share"
-        app:backgroundTint="@color/colorPrimary"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"/>
+    <proj.elitepick.library.FloatingActionMenu
+        android:id="@+id/fabshare"
+
+        android:elevation="0dp"
+android:backgroundTint="@color/colorPrimary"
+
+        android:layout_gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!--First button as menu button-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_main_circle"
+            android:padding="2dp"
+            android:elevation="0dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add"
+            fab:fabSize="mini"
+            fab:backgroundTint="#03A9F4"/>
+
+        <!-- Other button as menu items-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_random_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share"
+            fab:fabSize="mini"
+            android:elevation="0dp"
+            fab:backgroundTint="@color/colorPrimary" />
+        <!-- Other button as menu items-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_random_circle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_request"
+            fab:fabSize="mini"
+            android:elevation="0dp"
+            fab:backgroundTint="@color/colorPrimary" />
+        <!-- Other button as menu items-->
 
 
+
+    </proj.elitepick.library.FloatingActionMenu>
 
 </FrameLayout>
